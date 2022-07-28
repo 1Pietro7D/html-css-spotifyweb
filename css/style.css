@@ -73,7 +73,7 @@ PRINCIPAL-CONTAINER
 ASIDE 
  ********/
 
-#principal-container aside {
+aside#menu {
   flex: 0 0 50px;
   background-color: #000;
 }

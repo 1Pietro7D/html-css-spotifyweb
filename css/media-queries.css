@@ -1,5 +1,8 @@
 /********** min480px************/
 @media screen and (min-width: 480px) {
+  aside#menu {
+    flex-basis: 200px;
+  }
 }
 /********** min768px************/
 
