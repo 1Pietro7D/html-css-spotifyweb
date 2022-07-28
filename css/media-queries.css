@@ -1,25 +1,12 @@
 /********** min480px************/
 @media screen and (min-width: 480px) {
-  ::-webkit-scrollbar {
-    width: 12px;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent, #00c6ff);
-    border-radius: 6px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(transparent, hsl(244deg 60% 73%));
-  }
 }
 /********** min768px************/
 
 @media screen and (min-width: 768px) {
 }
 
-/********** min900px************/
-
-@media screen and (min-width: 900px) {
-}
+/********** min1200px************/
 
 @media screen and (min-width: 1200px) {
 }

@@ -36,26 +36,79 @@ a:not(.not) {
 /***+ SCROLLBAR +***/
 
 ::-webkit-scrollbar {
-  width: 0px;
+  background-color: hsl(222deg 38% 5%);
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(transparent, #fff);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(transparent, hsl(244deg 60% 73%));
 }
 
 /***+ SCROLLBAR +***/
 
-/********************* 
- HEADER 
- *********************/
+/* WEB-APP */
 
-/********************* 
- /MAIN 
- *********************/
+#web-app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
 
 /********************* <
- FOOTER 
+PRINCIPAL-CONTAINER 
  *********************/
 
 /********************* 
- /FOOTER 
- *********************/
+/PRINCIPAL-CONTAINER 
+*********************/
+#principal-container {
+  height: calc(100vh - 120px);
+  background-color: hsl(219deg 26% 11%);
+}
+/********* 
+ASIDE 
+ ********/
+
+#principal-container aside {
+  flex: 0 0 50px;
+  background-color: #000;
+}
+
+/********* 
+HEADER 
+********/
+#principal-container header {
+  position: fixed;
+  height: 100px;
+  width: calc(100vw - 50px);
+  background-color: #000;
+  opacity: 0.5;
+  /* sto avendo seri problemi a distinguere i colori XD */
+}
+/********* 
+/MAIN 
+********/
+#principal-container main {
+  height: calc(100vh - 100px);
+  width: calc(100vw - 50px - 12px);
+  padding-top: 100px;
+}
+/********************* <
+FOOTER 
+*********************/
+footer {
+  flex: 0 0 100px;
+  background-color: hsl(0deg 0% 16%);
+}
+/********************* 
+/FOOTER 
+*********************/
+
+/* WEB-APP */
 
 /********
 shared
