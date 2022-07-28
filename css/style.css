@@ -1,6 +1,7 @@
 /* VARIABLE */
 :root {
-  --: ;
+  --footer-h: 100px;
+  --header-h: 100px;
 }
 
 /***--- Generics ---***/
@@ -70,7 +71,7 @@ PRINCIPAL-CONTAINER
 /PRINCIPAL-CONTAINER 
 *********************/
 #principal-container {
-  height: calc(100vh - 120px);
+  height: calc(100vh - var(--footer-h));
   background-color: hsl(219deg 26% 11%);
 }
 /********* 
@@ -118,31 +119,59 @@ HEADER
 ********/
 #principal-container header {
   position: fixed;
-  height: 100px;
+  height: var(--header-h);
   width: 100%;
   background-color: #000;
   opacity: 0.5;
   /* sto avendo seri problemi a distinguere i colori XD */
 }
+#head-btn {
+  font-weight: bold;
+
+  padding: 30px 50px;
+}
+
 /********* 
 /MAIN 
 ********/
 #principal-container main {
-  height: calc(100vh - 100px);
+  height: calc(100vh - var(--footer-h));
   /* questo valore non è neccessario ma lo impostiamo lo stesso, mi da cmq maggior controllo */
-  padding-top: 100px;
+  padding-top: var(--header-h);
 }
 /********************* <
 FOOTER 
 *********************/
 footer {
-  flex: 0 0 100px;
+  height: var(--footer-h);
   background-color: hsl(0deg 0% 16%);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+footer button {
+  background-color: inherit;
+  border: 0;
+  color: #fff;
+  margin: 5px;
+}
+#play {
+  font-size: 1.2em;
+  vertical-align: middle;
 }
 /********************* 
 /FOOTER 
 *********************/
-
+#console {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+footer img {
+  width: 40px;
+}
 /* WEB-APP */
 
 /********

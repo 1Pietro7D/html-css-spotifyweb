@@ -14,9 +14,13 @@
     margin-bottom: 30px;
   }
 }
+
 /********** min768px************/
 
 @media screen and (min-width: 768px) {
+  #folder {
+    flex-direction: row;
+  }
 }
 
 /********** min1200px************/
