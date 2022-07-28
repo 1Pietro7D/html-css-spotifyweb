@@ -84,7 +84,7 @@ HEADER
 #principal-container header {
   position: fixed;
   height: 100px;
-  width: calc(100vw - 50px);
+  width: 100%;
   background-color: #000;
   opacity: 0.5;
   /* sto avendo seri problemi a distinguere i colori XD */
@@ -94,7 +94,7 @@ HEADER
 ********/
 #principal-container main {
   height: calc(100vh - 100px);
-  width: calc(100vw - 50px - 12px);
+  /* questo valore non è neccessario ma lo impostiamo lo stesso, mi da cmq maggior controllo */
   padding-top: 100px;
 }
 /********************* <
