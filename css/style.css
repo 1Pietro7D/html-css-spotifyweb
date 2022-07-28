@@ -26,6 +26,10 @@ ul {
 
 a:not(.not) {
   text-decoration: none;
+  color: #666;
+}
+a:not(.not):hover {
+  color: #fff;
 }
 
 /***--- /Generics ---***/
@@ -76,6 +80,37 @@ ASIDE
 aside#menu {
   flex: 0 0 50px;
   background-color: #000;
+  padding: 10px;
+}
+aside#menu img:not(.not) {
+  width: 40px;
+  vertical-align: middle;
+  margin: 5px 0;
+}
+button#download {
+  width: 20px;
+  height: 20px;
+  padding-bottom: 2px;
+  color: #666;
+  border: 1px solid #666;
+  background-color: #000;
+  border-radius: 50%;
+}
+.download-btn:hover button#download {
+  color: #fff;
+  border-color: #fff;
+}
+
+nav a:not(#logo):not(a:hover) {
+  filter: invert(0.5);
+  color: #fff;
+}
+/* non sapendo cambiare colore all'svg ho sfruttato invert 0.5 che equivale a grigio qualora Non si passi sopra con il mouse */
+#playlist span {
+  color: #666;
+}
+#navigation-bar a > span {
+  color: #fff;
 }
 
 /********* 
@@ -113,3 +148,23 @@ footer {
 /********
 shared
 *********/
+.circle40px {
+  height: 40px;
+  width: 40px;
+  background-color: #666;
+  border-radius: 50%;
+}
+.addict-btn > button {
+  height: 40px;
+  width: 40px;
+  background-color: #666;
+  border: 0;
+  font-size: 36px;
+  vertical-align: middle;
+}
+.addict-btn:hover > button {
+  background-color: #fff;
+}
+#playlist .addict-btn:hover > span {
+  color: #fff;
+}

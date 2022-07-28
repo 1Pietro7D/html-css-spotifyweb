@@ -2,6 +2,16 @@
 @media screen and (min-width: 480px) {
   aside#menu {
     flex-basis: 200px;
+    padding: 20px;
+  }
+  aside#menu .none {
+    display: initial;
+  }
+  aside#menu .future-none {
+    display: none;
+  }
+  aside#menu > nav > ul > li:first-child {
+    margin-bottom: 30px;
   }
 }
 /********** min768px************/

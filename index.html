@@ -29,7 +29,71 @@
   <body>
     <div id="web-app">
       <div class="flex flex-1" id="principal-container">
-        <aside id="menu"></aside>
+        <!-- ASIDE -->
+        <aside class="flex column j-between" id="menu">
+          <nav class="flex column">
+            <ul id="navigation-bar">
+              <li>
+                <a class="block" id="logo" href="#">
+                  <img src="img/logo-small.svg" class="future-none" alt="" />
+                  <img src="img/logo.svg" class="none not" alt="" />
+                  <!-- anomalia del display di questo link con img.none -->
+                </a>
+              </li>
+              <li>
+                <a href="" class="block">
+                  <img class="icon" src="img/home.svg" alt="home" />
+                  <span class="none">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="block">
+                  <img class="icon" src="img/search.svg" alt="cerca" />
+                  <span class="none">Cerca</span>
+                </a>
+              </li>
+              <li>
+                <a href="" class="block">
+                  <img
+                    class="icon"
+                    src="img/libreria.svg"
+                    alt="la tua libreria"
+                  />
+                  <span class="none">La tua libreria</span>
+                </a>
+              </li>
+            </ul>
+            <!-- PLAYLIST -->
+            <div class="none" id="playlist">
+              <h3>Playlist</h3>
+              <ul>
+                <li>
+                  <div class="addict-btn">
+                    <button>&plus;</button>
+                    <span>crea playlist</span>
+                  </div>
+                </li>
+                <li><span>nuova playlist</span></li>
+                <li><span>nuova playlist</span></li>
+                <li><span>nuova playlist</span></li>
+              </ul>
+            </div>
+            <!-- PLAYLIST -->
+          </nav>
+          <div>
+            <div class="download-btn">
+              <button id="download">&#8595;</button>
+              <!--se mi fossi accorto prima che c'era l'svg..-->
+              <a href="#download" class="none">installa app</a>
+            </div>
+            <hr />
+            <a href="#">
+              <img src="img/profile.svg" class="circle40px" alt="Profile" />
+              <span class="none">Your Name</span>
+            </a>
+          </div>
+        </aside>
+        <!-- ASIDE -->
         <div class="flex flex-1 column scroll">
           <header></header>
           <main class="flex">
