@@ -29,7 +29,7 @@ a:not(.not) {
   text-decoration: none;
   color: #666;
 }
-a:not(.not):hover {
+aside a:not(.not):hover {
   color: #fff;
 }
 
@@ -104,7 +104,6 @@ button#download {
 
 nav a:not(#logo):not(a:hover) {
   filter: invert(0.5);
-  color: #fff;
 }
 /* non sapendo cambiare colore all'svg ho sfruttato invert 0.5 che equivale a grigio qualora Non si passi sopra con il mouse */
 #playlist span {
@@ -123,12 +122,21 @@ HEADER
   width: 100%;
   background-color: #000;
   opacity: 0.5;
+
   /* sto avendo seri problemi a distinguere i colori XD */
 }
 #head-btn {
+  text-transform: uppercase;
   font-weight: bold;
-
-  padding: 30px 50px;
+  border: 2px solid #fff;
+  line-height: 16px;
+  padding: 20px 50px;
+  border-radius: 100px;
+  position: fixed;
+  right: 50px;
+  top: 20px;
+  color: #fff;
+  z-index: 1;
 }
 
 /********* 

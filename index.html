@@ -27,6 +27,10 @@
     <title>Spotifyweb</title>
   </head>
   <body>
+    <!-- WEB-APP -->
+    <!-- questo container si divide in:
+         principal-container (per aside, header e main)
+          e footer  -->
     <div id="web-app">
       <div class="flex flex-1" id="principal-container">
         <!-- ASIDE -->
@@ -35,8 +39,12 @@
             <ul id="navigation-bar">
               <li>
                 <a class="block" id="logo" href="#">
-                  <img src="img/logo-small.svg" class="future-none" alt="" />
-                  <img src="img/logo.svg" class="none not" alt="" />
+                  <img
+                    src="img/logo-small.svg"
+                    class="future-none"
+                    alt="logo"
+                  />
+                  <img src="img/logo.svg" class="none not" alt="logo" />
                   <!-- anomalia del display di questo link con img.none -->
                 </a>
               </li>
@@ -94,13 +102,22 @@
           </div>
         </aside>
         <!-- ASIDE -->
+
+        <!-- CONTAINER FOR HEADER AND MAIN -->
         <div class="flex flex-1 column scroll">
-          <header></header>
+          <!-- HEADER -->
+          <header>
+            <a href="#" class="" id="head-btn">effettua l'upgrade</a>
+          </header>
+          <!-- HEADER -->
           <main class="flex">
             <div class="debug"></div>
           </main>
         </div>
+        <!-- CONTAINER FOR HEADER AND MAIN -->
       </div>
+
+      <!-- FOOTER -->
       <footer>
         <div class="flex gap-20px">
           <div class="flex al-it-center">
@@ -139,6 +156,7 @@
           <input type="range" />
         </div>
       </footer>
+      <!-- /FOOTER -->
     </div>
   </body>
 </html>
