@@ -103,7 +103,7 @@ button#download {
   border-color: #fff;
 }
 
-nav a:not(#logo):not(a:hover) {
+aside nav a:not(#logo):not(a:hover) {
   filter: invert(0.5);
 }
 /* non sapendo cambiare colore all'svg ho sfruttato invert 0.5 che equivale a grigio qualora Non si passi sopra con il mouse */
@@ -136,6 +136,10 @@ HEADER
   right: 50px;
   top: 20px;
   color: #fff;
+  transition: transform 1s;
+}
+#head-btn:hover {
+  transform: scale(1.2);
 }
 
 /********* 
@@ -145,6 +149,29 @@ HEADER
   height: calc(100vh - var(--footer-h));
   /* questo valore non è neccessario ma lo impostiamo lo stesso, mi da cmq maggior controllo */
   padding-top: var(--header-h);
+}
+main nav {
+  line-height: 35px;
+}
+main nav a {
+  display: inline-block;
+}
+
+main nav a:not(a:hover)::after {
+  display: block;
+  content: "";
+  height: 2px;
+}
+main nav a:hover::after {
+  display: block;
+  content: "";
+  height: 2px;
+  transform: scaleX(-50%);
+  background-color: greenyellow;
+}
+
+main nav a:hover {
+  color: #fff;
 }
 
 main nav #flexible-nav {
@@ -158,6 +185,22 @@ main nav #flexible-nav {
 .sector-card {
   padding: 1%;
   width: 50%;
+}
+.box-img {
+  position: relative;
+}
+.box-img:active .none {
+  display: initial;
+  padding: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  filter: invert(1);
+  /* in verità l'immagine si centra grazie al padding e poiche è 
+  grande quanto il contenitore, e lo
+   spostamento si annulla con la translazione */
 }
 .sector-card img {
   width: 100%;
