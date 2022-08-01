@@ -276,7 +276,7 @@
         </div>
 
         <!-- console -->
-        <div id="console">
+        <div class="flex column flex-1" id="console">
           <div>
             <button><i class="fa-solid fa-shuffle"></i></button>
             <button><i class="fa-solid fa-backward-step"></i></button>
@@ -284,10 +284,10 @@
             <button><i class="fa-solid fa-forward-step"></i></button>
             <button><i class="fa-solid fa-arrow-rotate-right"></i></button>
           </div>
-          <div class="self-end">
-            <span>3.40</span>
-            <input type="range" />
-            <span>14.5</span>
+          <div class="flex w100 j-center">
+            <div class="compromise">3.40</div>
+            <input type="range" id="time-sound" />
+            <div class="compromise">14.5</div>
           </div>
         </div>
         <!-- console -->
@@ -295,7 +295,7 @@
           <button><i class="fa-solid fa-list-ul"></i></button>
           <button><i class="fa-solid fa-display"></i></button>
           <button><i class="fa-solid fa-volume-high"></i></button>
-          <input type="range" />
+          <input type="range" id="volume" />
         </div>
       </footer>
       <!-- /FOOTER -->

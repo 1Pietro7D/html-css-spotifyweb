@@ -120,7 +120,7 @@ HEADER
 #principal-container header {
   position: fixed;
   height: var(--header-h);
-  width: 100%;
+  width: calc(100% - var(--aside-w));
   background-color: rgba(0, 0, 0, 0.5);
 
   /* sto avendo seri problemi a distinguere i colori XD */
@@ -238,6 +238,18 @@ footer button {
 }
 footer img {
   width: 40px;
+}
+#time-sound {
+  flex: 1 1 auto;
+  min-width: 30px;
+}
+.compromise {
+  width: 40px;
+  text-align: center;
+}
+
+#volume {
+  min-width: 30px;
 }
 /* WEB-APP */
 
